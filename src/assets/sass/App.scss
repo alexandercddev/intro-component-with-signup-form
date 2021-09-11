@@ -1,0 +1,49 @@
+/** 
+ * @author: alexandercds
+ * @description: 
+ * @date: 10/septiembre/2021
+**/ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+$primaryRed: hsl(0, 100%, 74%);
+$primaryGreen: hsl(154, 59%, 51%);
+
+$accentBlue: hsl(248, 32%, 49%);
+
+$neutralDarkBlue: hsl(249, 10%, 26%);
+$neutralGrayishBlue: hsl(246, 25%, 77%);
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primaryRed;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.col {
+    width: 50%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 16px;
+}
