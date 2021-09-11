@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/intro-component-with-signup-form/static/css/main.cb630204.chunk.css",
+    "main.js": "/intro-component-with-signup-form/static/js/main.5225ce76.chunk.js",
+    "main.js.map": "/intro-component-with-signup-form/static/js/main.5225ce76.chunk.js.map",
+    "runtime-main.js": "/intro-component-with-signup-form/static/js/runtime-main.96ddde46.js",
+    "runtime-main.js.map": "/intro-component-with-signup-form/static/js/runtime-main.96ddde46.js.map",
+    "static/js/2.48e4b428.chunk.js": "/intro-component-with-signup-form/static/js/2.48e4b428.chunk.js",
+    "static/js/2.48e4b428.chunk.js.map": "/intro-component-with-signup-form/static/js/2.48e4b428.chunk.js.map",
+    "static/js/3.d18f2888.chunk.js": "/intro-component-with-signup-form/static/js/3.d18f2888.chunk.js",
+    "static/js/3.d18f2888.chunk.js.map": "/intro-component-with-signup-form/static/js/3.d18f2888.chunk.js.map",
+    "index.html": "/intro-component-with-signup-form/index.html",
+    "static/css/main.cb630204.chunk.css.map": "/intro-component-with-signup-form/static/css/main.cb630204.chunk.css.map",
+    "static/js/2.48e4b428.chunk.js.LICENSE.txt": "/intro-component-with-signup-form/static/js/2.48e4b428.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/intro-component-with-signup-form/static/media/icon-error.b72f792e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96ddde46.js",
+    "static/js/2.48e4b428.chunk.js",
+    "static/css/main.cb630204.chunk.css",
+    "static/js/main.5225ce76.chunk.js"
+  ]
+}
