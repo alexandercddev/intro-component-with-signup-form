@@ -8,7 +8,10 @@ const Error = (props) => {
     const { errors, validate, name } = props;
     return (
         errors?.[name] && errors?.[name].type === validate ? ( 
-            <span className="error">{errors?.[name].message}</span>
+            <>
+                <i className="error-icon" />
+                <span className="error">{errors?.[name].message}</span>
+                </>
         ) : (
             null
         )

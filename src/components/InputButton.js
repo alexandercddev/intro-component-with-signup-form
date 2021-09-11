@@ -12,7 +12,7 @@ const InputButton = (props) => {
             <input 
                 className={`btn ${className}`} 
                 onClick={handleClick}
-                type={type} value={value}/>
+                type={type} value={value}/> 
         </div>
     );
 }

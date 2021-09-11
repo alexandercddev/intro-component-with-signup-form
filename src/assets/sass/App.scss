@@ -10,13 +10,14 @@ $primaryGreen: hsl(154, 59%, 51%);
 
 $accentBlue: hsl(248, 32%, 49%);
 
-$neutralDarkBlue: hsl(249, 10%, 26%);
+$neutralDarkBlue: hsla(249, 10%, 26%, 0.5);
 $neutralGrayishBlue: hsl(246, 25%, 77%);
 
 * { 
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins'; 
+    font-weight: 300;
 }
 
 .container {
@@ -25,11 +26,11 @@ $neutralGrayishBlue: hsl(246, 25%, 77%);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $primaryRed;
+    background: url('../images/bg-intro-desktop.png'), $primaryRed;
 }
 
 .content {
-    width: 90%;
+    width: 960px;
     display: flex;
     align-items: center;
     padding-left: 100px;
@@ -41,9 +42,148 @@ $neutralGrayishBlue: hsl(246, 25%, 77%);
 }
 
 h2 {
+    width: 270px;
+    font-weight: bold;
+    color: #FFF;
     font-size: 2em;
 }
 
 p {
+    padding-right: 30px;
+    font-weight: 300;
+    color: #FFF;
     font-size: 16px;
+}
+
+.form {
+    border-radius: 8px;
+    background-color: #FFF; 
+    padding: 30px;
+    box-shadow: 0px 5px 4px 0px $neutralDarkBlue;
+}
+
+.head { 
+    background-color: $accentBlue;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 4px 0px $neutralDarkBlue;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.head> span {
+    color: $neutralGrayishBlue;
+    font-weight: 300;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%; 
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid $neutralDarkBlue; 
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    outline: $primaryRed;
+}
+
+input.error {
+    width: 100%; 
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid $primaryRed;
+} 
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: flex-end;
+} 
+
+.btn {
+    color: #FFF;
+    cursor: pointer;
+    background-color: $primaryGreen;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-color: $primaryGreen;
+    text-transform:  uppercase;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer> span { 
+    font-weight: bold;
+    color: $neutralGrayishBlue;
+    font-size: 10px;
+}
+
+.footer> span> a { 
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 3px;
+    color: $primaryRed;
+}
+
+.error {
+    margin-top: 3px;
+    font-size: 10px;
+    color: $primaryRed;
+}
+
+i.error-icon {
+    content: url('../svgs/icon-error.svg');
+    position: absolute;
+    padding: 10px;
+    min-width: 10px;
+}
+
+@media (min-width: 220px) and (max-width: 750px) {  
+    .container {
+        width: auto;
+        height: auto; 
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .content {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .col {
+        width: 85%;
+    }
+
+    h2, p {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    input {
+        height: 60px; 
+    }
+ 
 }

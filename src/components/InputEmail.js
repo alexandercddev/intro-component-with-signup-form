@@ -4,6 +4,7 @@
  * @date: 10/septiembre/2021
 **/ 
 import Error from './Error';
+import {setErrorClass} from '../containers/ErrorClass';
 
 const InputEmail = (props) => {
     const { placeholder, register, name, required, errors} = props;
@@ -11,7 +12,11 @@ const InputEmail = (props) => {
         <div className="input-text">  
             <input 
             placeholder={placeholder} 
-            className="input" 
+            className={
+                `input 
+                ${setErrorClass({name, errors, validated: 'required'})} 
+                ${setErrorClass({name, errors, validated: 'pattern'})}`
+            } 
             type="text" 
             {...register(name, { 
                 required: {

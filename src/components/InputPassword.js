@@ -4,6 +4,7 @@
  * @date: 10/septiembre/2021
 **/ 
 import Error from './Error';
+import {setErrorClass} from '../containers/ErrorClass';
 
 const InputPassword = (props) => {
     const { placeholder, register, name, required, errors} = props;
@@ -11,7 +12,7 @@ const InputPassword = (props) => {
         <div className="input-text">  
             <input 
             placeholder={placeholder} 
-            className="input" 
+            className={`input ${setErrorClass({name, errors, required: 'required'})}`}  
             type="password" 
             {...register(name, { 
                 required: {

@@ -40,7 +40,7 @@ const App = (props) => {
                 <div className="col">
                     <Card></Card>
                     <Card>
-                        <div className="btn"> 
+                        <div className="head"> 
                             Try it free 7 days <span>the $20/mo. thereafter</span>
                         </div>
                         <Form 
