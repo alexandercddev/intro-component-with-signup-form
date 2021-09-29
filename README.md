@@ -20,6 +20,7 @@ If you find a bug, kindly open an issue [here](https://github.com/alexandercds/i
 
 - [REACTJS](https://reactjs.org/)
 - [SASS](https://sass-lang.com/)
+- [REACT HOOK FORM](https://react-hook-form.com/)
 - [FRONTEND-MENTOR](https://www.frontendmentor.io/challenges/)
 
 
